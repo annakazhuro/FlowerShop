@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FlowerShop</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-0 navbar-custom" style="" id="link-style">
+      <img src="https://www196.lunapic.com/editor/working/155688132554499000?4332673857" width="50" height="45" alt="logo" id="logo">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-1">
+          <li class="nav-item">
+            <a class="nav-link navbar-text" href="#">Вход</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-text" href="#">Регистрация</a>
+          </li>
+          <li>
+            <a class="nav-link navbar-text" href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ./Navbar -->
+    <!-- Menu -->
+    <div class="container btn-group-alignment" id="link-style">
+      <div class="btn-group">
+        <!-- Products -->
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle navbar-text btn" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Меню</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Цветы</a>
+            <a class="dropdown-item" href="#">Букеты</a>
+            <a class="dropdown-item" href="#">Подарки</a>
+          </div>
+        </div>
+        <!-- Occassion -->
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle navbar-text btn" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Событие</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">День рождения</a>
+            <a class="dropdown-item" href="#">День матери</a>
+            <a class="dropdown-item" href="#">8 Марта</a>
+            <a class="dropdown-item" href="#">Годовщина</a>
+            <a class="dropdown-item" href="#">Свадьба</a>
+            <a class="dropdown-item" href="#">Рождение ребенка</a>
+          </div>
+        </div>
+        <!-- Inspiration -->
+        <a class="nav-link navbar-text btn" href="#">Вдохновение</a>
+        <!-- Contact -->
+        <a class="nav-link navbar-text btn" href="#">Контакты</a>
+        <!-- Search -->
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2  input-change" type="search" placeholder="Поиск" aria-label="Search">
+          <button class="btn btn-sm my-2 my-sm-0 btn-change" type="submit">Поиск</button>
+        </form>
+      </div>
+    </div>
+    <!-- ./Menu -->
+    <%= yield %>
+    <!-- Footer -->
+    <section class="section-title" id="footer">
+      <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>Полезные ссылки</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Главная</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>О компании</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Вопрос/Ответ</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Видео</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>Полезные ссылки</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Главная</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>О компании</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Вопрос/Ответ</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Видео</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>Полезные ссылки</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Главная</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>О компании</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Вопрос/Ответ</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Видео</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+            <ul class="list-unstyled list-inline social text-center">
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+              <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+          </div>
+          </hr>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+            <p><u><a href="https://www.nationaltransaction.com/">Частное торговое предприятие</a></u> 220089, Республика Беларусь, г.Минск</p>
+            <p class="h6">&copy Все права защищены.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">МагазинЦветов</a></p>
+          </div>
+          </hr>
+        </div>
+      </div>
+    </section>
+    <!-- ./Footer -->
+  </body>
+</html>

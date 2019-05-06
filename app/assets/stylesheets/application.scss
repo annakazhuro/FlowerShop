@@ -1,0 +1,230 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+$color_1: #80776f;
+$color_2: #fff;
+$color_3: #3a3531;
+$color_4: #e24486;
+$font_family_1: sans-serif;
+$background_color_1: #efe5dc;
+$background_color_2: #fff;
+$background_color_3: #fbf2eaba;
+$background_color_4: transparent;
+$border_color_1: #80776f;
+$border_color_2: #fff;
+$border_color_3: #80776f57;
+
+/* Navbar */
+/* Menu */
+/* Carousel */
+/* Links */
+/* Footer */
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+.navbar-custom {
+  background-color: $background_color_1;
+}
+.navbar-text {
+  color: $color_1;
+  font-family: $font_family_1;
+  font-size: medium;
+}
+.item {
+  img {
+    object-fit: cover;
+    height: 500px !important;
+    width: 900px;
+  }
+}
+#logo {
+  margin-left: 3em;
+}
+.btn-group-rtl {
+  float: right;
+  padding-right: 10px;
+  font-family: $font_family_1;
+  font-size: medium;
+  background-color: $background_color_1;
+}
+.btn-group-alignment {
+  display: block;
+  text-align: right;
+  margin-right: 0em;
+  .btn {
+    float: none;
+  }
+}
+.btn-change {
+  color: $color_1;
+  background-color: $background_color_2;
+  border-color: $border_color_1;
+  &:hover {
+    text-decoration: none;
+    color: $color_2;
+    background: #e24486;
+    border-color: $border_color_2;
+  }
+}
+.btn {
+  &:focus {
+    box-shadow: none;
+  }
+}
+.input-change {
+  color: $color_1;
+  background-color: $background_color_2;
+  border-color: $border_color_1;
+  width: 12em;
+  height: 2em;
+}
+.form-control {
+  &:focus {
+    border-color: $border_color_3;
+    box-shadow: 0 0 0 0.1rem #80776fab;
+  }
+}
+.carousel {
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 900px;
+  align-content: center;
+}
+#carousel-text {
+  border-radius: 0.2em;
+  background-color: $background_color_3;
+  color: $color_3;
+  font-family: $font_family_1;
+  margin: unset;
+  h5 {
+    font-size: x-large;
+    font-style: normal;
+    font-weight: bold;
+  }
+  p {
+    font-style: italic;
+    font-weight: normal;
+    font-size: medium;
+  }
+  a {
+    color: $color_3;
+    font-family: $font_family_1;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: medium;
+  }
+}
+#link-style {
+  a {
+    &:hover {
+      text-decoration: none;
+      color: $color_2;
+      background: #e24486;
+    }
+  }
+}
+section {
+  padding: 60px 0;
+  .section-title {
+    text-align: center;
+    color: $color_1;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: $font_family_1;
+    font-size: medium;
+  }
+}
+.row {
+  p {
+    color: $color_1;
+  }
+}
+#footer {
+  background: #efe5dc !important;
+  h5 {
+    padding-left: 10px;
+    border-left: 3px solid #80776f;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: $color_1;
+  }
+  a {
+    color: $color_1;
+    text-decoration: none !important;
+    background-color: $background_color_4;
+    -webkit-text-decoration-skip: objects;
+  }
+  ul.social {
+    li {
+      padding: 3px 0;
+      a {
+        i {
+          margin-right: 5px;
+          font-size: 25px;
+          -webkit-transition: .5s all ease;
+          -moz-transition: .5s all ease;
+          transition: .5s all ease;
+        }
+        color: $color_1;
+        &:hover {
+          color: $color_4;
+        }
+      }
+      &:hover {
+        a {
+          i {
+            font-size: 30px;
+            margin-top: -10px;
+          }
+        }
+      }
+    }
+  }
+  ul.quick-links {
+    li {
+      a {
+        color: $color_1;
+        i {
+          margin-right: 5px;
+        }
+      }
+      padding: 3px 0;
+      -webkit-transition: .5s all ease;
+      -moz-transition: .5s all ease;
+      transition: .5s all ease;
+      &:hover {
+        padding: 3px 0;
+        margin-left: 5px;
+        font-weight: 700;
+        a {
+          i {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:767px) {
+  #footer {
+    h5 {
+      padding-left: 0;
+      border-left: transparent;
+      padding-bottom: 0px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
