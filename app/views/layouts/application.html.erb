@@ -15,12 +15,19 @@
       <img src="https://www196.lunapic.com/editor/working/155688132554499000?4332673857" width="50" height="45" alt="logo" id="logo">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mr-1">
-          <li class="nav-item">
-            <a class="nav-link navbar-text" href="#">Вход</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-text" href="#">Регистрация</a>
-          </li>
+          <% if user_signed_in? %>
+            <li class="nav-item">
+              <%= link_to 'Выход', destroy_user_session_path, method: :delete, class: 'nav-link navbar-text' %>
+            </li>
+          <% else %>
+            <li class="nav-item">
+              <%= link_to 'Вход', new_user_session_path, class: 'nav-link navbar-text' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Регистрация', new_user_registration_path, class: 'nav-link navbar-text' %>
+            </li>
+          <% end %>
+
           <li>
             <a class="nav-link navbar-text" href="#">Корзина</a>
           </li>
@@ -64,6 +71,16 @@
       </div>
     </div>
     <!-- ./Menu -->
+    <div class="row">
+      <div class="col-md-12">
+        <% flash.each do |name,message| %>
+          <div class="alert <%= bootstrap_class_for(name) %>">
+            <button class="close" data-dismiss="alert">&times;</button>
+            <%= message %>
+          </div>
+        <% end %>
+      </div>
+    </div>
     <%= yield %>
     <!-- Footer -->
     <section class="section-title" id="footer">
