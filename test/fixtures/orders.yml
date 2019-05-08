@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_date: 2019-05-07
+  sub_total: 9.99
+  comment: MyText
+
+two:
+  order_date: 2019-05-07
+  sub_total: 9.99
+  comment: MyText

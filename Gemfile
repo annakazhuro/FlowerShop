@@ -13,7 +13,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
-gem 'devise'
+gem 'devise', '~> 4.4.3'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

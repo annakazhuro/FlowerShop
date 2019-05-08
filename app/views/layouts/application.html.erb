@@ -12,7 +12,9 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg py-0 navbar-custom" style="" id="link-style">
-      <img src="https://www196.lunapic.com/editor/working/155688132554499000?4332673857" width="50" height="45" alt="logo" id="logo">
+      <%= link_to root_path do %>
+        <%= image_tag 'https://www196.lunapic.com/editor/working/155688132554499000?4332673857', width: 50, height: 45, alt: 'logo', id: 'logo' %>
+      <% end %>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mr-1">
           <% if user_signed_in? %>
@@ -39,26 +41,16 @@
     <div class="container btn-group-alignment" id="link-style">
       <div class="btn-group">
         <!-- Products -->
-        <div class="dropdown">
-          <a class="nav-link dropdown-toggle navbar-text btn" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Меню</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Цветы</a>
-            <a class="dropdown-item" href="#">Букеты</a>
-            <a class="dropdown-item" href="#">Подарки</a>
+        <% Category.all.each do |category| %>
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle navbar-text btn" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><%= category.title %></a>
+            <div class="dropdown-menu">
+              <% category.subcategories.each do |subcat| %>
+                <%= link_to subcat.name, subcategory_path(subcat.id), class: 'dropdown-item' %>
+              <% end %>
+            </div>
           </div>
-        </div>
-        <!-- Occassion -->
-        <div class="dropdown">
-          <a class="nav-link dropdown-toggle navbar-text btn" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Событие</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">День рождения</a>
-            <a class="dropdown-item" href="#">День матери</a>
-            <a class="dropdown-item" href="#">8 Марта</a>
-            <a class="dropdown-item" href="#">Годовщина</a>
-            <a class="dropdown-item" href="#">Свадьба</a>
-            <a class="dropdown-item" href="#">Рождение ребенка</a>
-          </div>
-        </div>
+        <% end %>
         <!-- Inspiration -->
         <a class="nav-link navbar-text btn" href="#">Вдохновение</a>
         <!-- Contact -->
