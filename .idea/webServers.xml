@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bc207bd3-d10e-4291-b42e-7518625c573c" name="shard14" url="http://shard14.profitero.local">
+        <fileTransfer host="shard14.profitero.local" port="22" privateKey="$USER_HOME$/.ssh/id_rsa" rootFolder="/opt/apps/profit/project" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
