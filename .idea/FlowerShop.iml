@@ -55,7 +55,7 @@
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.12.2, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.5, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.4, RVM: ruby-2.6.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="devise (v4.6.2, RVM: ruby-2.6.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="devise (v4.4.3, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.8.0, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.10.0, RVM: ruby-2.6.0) [gem]" level="application" />
@@ -64,6 +64,7 @@
     <orderEntry type="library" scope="PROVIDED" name="io-like (v0.3.0, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.8.0, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.3.3, RVM: ruby-2.6.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jquery_mask_rails (v0.1.0, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="launchy (v2.4.3, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="letter_opener (v1.7.0, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.1.5, RVM: ruby-2.6.0) [gem]" level="application" />
@@ -102,7 +103,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.7, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc (v2.0.1, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc-rails (v2.1.1, RVM: ruby-2.6.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v3.142.0, RVM: ruby-2.6.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v3.142.1, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring (v2.0.2, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring-watcher-listen (v2.0.1, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v3.7.2, RVM: ruby-2.6.0) [gem]" level="application" />

@@ -16,4 +16,9 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require jquery.mask
 //= require_tree .
+
+$(document).ready(function(){
+    $('.phone-number').mask('+375-(00)-000-00-00');
+});
