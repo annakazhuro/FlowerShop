@@ -1,0 +1,128 @@
+ru:
+  admin:
+    users:
+      index:
+        status: Статус
+        blocked: Заблокирован
+        active: Активный
+        delete: Удалить
+        unban: Разбанить
+        ban: Забанить
+        all_users: Все пользователи
+    categories:
+      index:
+        title: Категории
+        name: 'Категории'
+        new_category: Новая категория
+        delete: Удалить
+        edit: Изменить
+      new:
+        title: Категории
+        name: 'Новая категория'
+      edit:
+        title: Категории
+        name: 'Редактирование категории'
+      form:
+        submit: '%{action}'
+  common:
+    errors: 'При заполнении формы возникли ошибки'
+    back: 'Назад'
+    create: 'Создать'
+    edit: 'Изменить'
+  manuals:
+    index:
+      title: 'Инструкции'
+    new:
+      title: 'Новая инструкция'
+    edit:
+      title: 'Редактирование инструкции'
+    show:
+      edit: Изменить
+      delete: Удалить
+    form:
+      save: '%{action}'
+      to_steps: '%{action} Шаги'
+      add_steps: Добавить шаг
+      steps_adding: Добавление шагов
+    step_fields:
+      remove_step: Удалить шаг
+      title: Название
+      body: Содержание
+    manual:
+      edit: 'Изменить'
+      delete: 'Удалить'
+  search:
+    form:
+      search: Поиск
+      placeholder: Искать инструкции
+    search:
+      search_results: Результаты поиска
+  users:
+    show:
+      users_man: Ваши инструкции
+      new_man: Новая инструкция
+      title: Названия
+      edit: Изменить
+      delete: Удалить
+  tags: Тэги
+  man: Инструкции
+  category: Категории
+  new_man: Новая инструкция
+  my_man: Мои инструкции
+  all_users: Все пользователи
+  categ: Категории
+  sign_in: Войти
+  sign_out: Выход
+  registration: Регистрация
+
+
+
+  date:
+    formats:
+      # Форматы указываются в виде, поддерживаемом strftime.
+      # По умолчанию используется default.
+      # Можно добавлять собственные форматы
+      #
+      #
+      # Use the strftime parameters for formats.
+      # When no format has been given, it uses default.
+      # You can provide other formats here if you like!
+      default: "%d.%m.%Y"
+      short: "%d %b"
+      long: "%d %B, %Y"
+
+    # Названия дней недели -- контекстные и отдельностоящие
+    common_day_names: [воскресенье, понедельник, вторник, среда, четверг, пятница, суббота]
+    standalone_day_names: [Воскресенье, Понедельник, Вторник, Среда, Четверг, Пятница, Суббота]
+    common_abbr_day_names: [Вс, Пн, Вт, Ср, Чт, Пт, Сб]
+    standalone_abbr_day_names: [вс, пн, вт, ср, чт, пт, сб]
+
+    # Названия месяцев -- сокращенные и полные, плюс отдельностоящие.
+    # Не забудьте nil в начале массиве (~)
+    #
+    #
+    # Don't forget the nil at the beginning; there's no such thing as a 0th month
+    common_month_names: [~, Январь, Февраль, Март, Апрель, Май, Июнь, Июль, Август, Сентябрь, Октябрь, Ноябрь, Декабрь]
+    standalone_month_names: [~, Январь, Февраль, Март, Апрель, Май, Июнь, Июль, Август, Сентябрь, Октябрь, Ноябрь, Декабрь]
+    common_abbr_month_names: [~, янв., февр., марта, апр., мая, июня, июля, авг., сент., окт., нояб., дек.]
+    standalone_abbr_month_names: [~, янв., февр., март, апр., май, июнь, июль, авг., сент., окт., нояб., дек.]
+
+    # Порядок компонентов даты для хелперов
+    #
+    #
+    # Used in date_select and datime_select.
+    order:
+      - :day
+      - :month
+      - :year
+
+  time:
+    # Форматы времени
+    formats:
+      default: "%a, %d %b %Y, %H:%M:%S %z"
+      short: "%d %b, %H:%M"
+      long: "%d %B %Y, %H:%M"
+
+    # am/pm решено перевести как "утра/вечера" :)
+    am: "утра"
+    pm: "вечера"

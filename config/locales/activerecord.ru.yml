@@ -1,0 +1,14 @@
+ru:
+  activerecord:
+    models:
+      manual: 'Инструкции'
+    attributes:
+      user:
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+        name: 'Имя'
+        phone: 'Номер телефона'
+        remember_me: 'Запомнить меня'
+    errors:
+      messages:
+        blank: 'не может быть пустым'
