@@ -31,7 +31,7 @@
           <% end %>
 
           <li>
-            <a class="nav-link navbar-text" href="#">Корзина</a>
+            <%= link_to 'Корзина', cart_path(session[:cart_id] || 0), class: 'nav-link navbar-text' %>
           </li>
         </ul>
       </div>
