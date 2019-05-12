@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 2019_05_12_060405) do
   create_table "products", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", null: false
     t.boolean "available", null: false
-    t.text "description", limit: 16777215
+    t.text "description"
     t.decimal "price", precision: 15, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
