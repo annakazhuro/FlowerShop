@@ -1,0 +1,14 @@
+<div class="carts">
+  <h2>Корзина</h2>
+  <table>
+    <%= render (@cart.line_items) %>
+    <tr class="total_line">
+      <td colspan="2">Total</td>
+      <td class="total_cell"><%= number_to_currency(@cart.total_price, format: "%n BYN") %></td>
+    </tr>
+  </table>
+  <span>
+    <%= link_to "Оформить заказ", new_order_path, class: 'btn btn-success'%>
+    <%= button_to 'Очистить карзину', @cart, method: :delete, data: { confirm: 'Вы уверенны?' }, class: 'btn btn-danger' %>
+  </span>
+</div>

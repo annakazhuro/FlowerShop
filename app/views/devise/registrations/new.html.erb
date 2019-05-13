@@ -16,6 +16,11 @@
         </div>
 
         <div class="form-group">
+          <%= f.label :phone %>
+          <%= f.text_field :phone, class: 'form-control phone-number'%>
+        </div>
+
+        <div class="form-group">
           <%= f.label :password %>
           <% if @minimum_password_length %>
           <em>(<%= @minimum_password_length %> символов минимум)</em>

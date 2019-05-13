@@ -30,8 +30,14 @@
             </li>
           <% end %>
 
+
+
           <li>
-            <%= link_to 'Корзина', cart_path(session[:cart_id] || 0), class: 'nav-link navbar-text' %>
+            <%= link_to cart_path(@cart), class: 'nav-link navbar-text' do %>
+              <span class="cart-count">Корзина
+                <%= cart_count_over_one %>
+              </span>
+            <% end %>
           </li>
         </ul>
       </div>
