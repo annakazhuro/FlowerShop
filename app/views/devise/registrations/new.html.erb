@@ -14,9 +14,15 @@
           <%= f.label :name , id:'placeholder'%><br />
           <%= f.text_field :name, autofocus: true, autocomplete: "name", class: 'form-control'%>
         </div>
-
+      
+        <div class="form-group">
+          <%= f.label :phone %>
+          <%= f.text_field :phone, class: 'form-control phone-number'%>
+        </div>
+    
         <div class="form-group" id="placeholder">
           <%= f.label :password, id: 'placeholder' %>
+
           <% if @minimum_password_length %>
           <em>(<%= @minimum_password_length %> символов минимум)</em>
           <% end %><br />
