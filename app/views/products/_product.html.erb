@@ -1,8 +1,8 @@
-<p>
-  this is product
-  <%= link_to product.title, product_path(product.id) %>
-  <%= button_to 'Добавить в карзину', line_items_path(product_id: product), class: 'btn btn-success', remote: true %>
-</p>
-<hr>
-
-
+<div class="column1 block">
+  <p>
+    this is product
+    <%= link_to product.title, product_path(product.id) %>
+    <%= button_to 'Добавить в карзину', line_items_path(product_id: product), class: 'btn btn-success', remote: true %>
+  </p>
+  <hr>
+</div>
