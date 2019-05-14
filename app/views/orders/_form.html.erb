@@ -1,0 +1,36 @@
+<%= form_with(model: order, local: true) do |form| %>
+  <% if order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, size: 40, class: 'form-control', :value => default_user_name %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :phone %>
+    <%= form.text_field :phone, class: 'form-control phone-number', :value => default_phone %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :email %>
+    <%= form.email_field :email, size: 40, class: 'form-control', :value => default_email%>
+  </div>
+  <div class="form-group">
+    <%= form.label :pay_type %>
+    <%= form.select :pay_type, Order.pay_types.keys, prompt: 'Выберите способ оплаты', class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.submit 'Добавить', class: 'btn btn-primary' %>
+  </div>
+<% end %>

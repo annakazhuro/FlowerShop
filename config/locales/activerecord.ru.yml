@@ -3,6 +3,10 @@ ru:
     models:
       manual: 'Инструкции'
     attributes:
+      order:
+        name: 'Имя'
+        phone: 'Номер телефона'
+        pay_type: 'Способ оплаты'
       user:
         password: 'Пароль'
         password_confirmation: 'Подтверждение пароля'
