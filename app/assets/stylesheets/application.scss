@@ -17,7 +17,7 @@
 $color_1: #80776f;
 $color_2: #fff;
 $color_3: #3a3531;
-$color_4: #e24486;
+$color_4: #9BEFEC;
 $font_family_1: sans-serif;
 $background_color_1: #efe5dc;
 $background_color_2: #fff;
@@ -34,7 +34,7 @@ $border_color_3: #80776f57;
 /* Footer */
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 .navbar-custom {
-  background-color: $background_color_1;
+  background-color: #FFF1D2;
 }
 .navbar-text {
   color: $color_1;
@@ -51,12 +51,17 @@ $border_color_3: #80776f57;
 #logo {
   margin-left: 3em;
 }
+.logo-style {
+  &:hover {
+    background-color: #FFF1D2 !important;
+  }
+}
 .btn-group-rtl {
   float: right;
   padding-right: 10px;
   font-family: $font_family_1;
   font-size: medium;
-  background-color: $background_color_1;
+  background-color: #FFF2D7;
 }
 .btn-group-alignment {
   display: block;
@@ -73,8 +78,9 @@ $border_color_3: #80776f57;
   &:hover {
     text-decoration: none;
     color: $color_2;
-    background: #e24486;
-    border-color: $border_color_2;
+    background: $color_4;
+    border-color: $color_4;
+    border-radius: 5px;
   }
 }
 .btn {
@@ -131,7 +137,8 @@ $border_color_3: #80776f57;
     &:hover {
       text-decoration: none;
       color: $color_2;
-      background: #e24486;
+      background: $color_4;
+      border-radius: 5px;
     }
   }
 }
@@ -152,7 +159,7 @@ section {
   }
 }
 #footer {
-  background: #efe5dc !important;
+  background: #FFEEC9 !important;
   h5 {
     padding-left: 10px;
     border-left: 3px solid #80776f;
@@ -228,3 +235,58 @@ section {
   }
 }
 
+// SIGN IN
+.style {
+  border-radius: 7px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-image: url("background_form.jpeg");
+  #signin {
+    width: 350px;
+    height: 400px;
+  }
+  #registration {
+    width: 350px;
+    height:70vh;
+  }
+  #confirmation {
+    width: 350px;
+    height:50vh;
+  }
+  #forget-password {
+    width: 350px;
+    height:50vh;
+  }
+}
+
+.form {
+  a {
+    color: #564e4b;
+    &:hover {
+      text-decoration: none;
+      color: $color_1;
+    }
+  }
+  h2 {
+    color: #564e4b;
+    font-family: Sans-Serif, Helvetica, sans-serif;
+  }
+  #placeholder {
+    color: $color_1;
+    font-size: medium;
+    font-style: italic;
+  }
+  label {
+    color: #564e4b;
+  }
+  input[type='checkbox']{
+    filter: hue-rotate(180deg);
+  }
+}
+
+// PRODUCTS
+.product-design {
+  p {
+
+  }
+}
