@@ -11,26 +11,26 @@
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= form.label :name %>
+  <div class="form-group form">
+    <%= form.label :name, id: 'placeholder' %>
     <%= form.text_field :name, size: 40, class: 'form-control', :value => default_user_name %>
   </div>
 
-  <div class="form-group">
-    <%= form.label :phone %>
+  <div class="form-group form">
+    <%= form.label :phone, id: 'placeholder' %>
     <%= form.text_field :phone, class: 'form-control phone-number', :value => default_phone %>
   </div>
 
-  <div class="form-group">
-    <%= form.label :email %>
+  <div class="form-group form">
+    <%= form.label :email, id: 'placeholder' %>
     <%= form.email_field :email, size: 40, class: 'form-control', :value => default_email%>
   </div>
-  <div class="form-group">
-    <%= form.label :pay_type %>
+  <div class="form-group form">
+    <%= form.label :pay_type, id: 'placeholder'%>
     <%= form.select :pay_type, Order.pay_types.keys, prompt: 'Выберите способ оплаты', class: 'form-control' %>
   </div>
 
-  <div class="form-group">
-    <%= form.submit 'Добавить', class: 'btn btn-primary' %>
+  <div class="form-group form">
+    <%= form.submit 'Добавить', class: 'btn btn-change' %>
   </div>
 <% end %>

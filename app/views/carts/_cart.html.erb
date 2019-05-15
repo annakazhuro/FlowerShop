@@ -1,6 +1,6 @@
-<div class="carts">
-  <h2>Корзина</h2>
-  <table>
+<div class="carts form cart">
+  <h2 align="center">Корзина</h2>
+  <table style="margin-left: 2em;width: 1300px;margin-bottom: 1em;">
     <%= render (@cart.line_items) %>
     <tr class="total_line">
       <td colspan="2">Total</td>
@@ -8,7 +8,9 @@
     </tr>
   </table>
   <span>
-    <%= link_to "Оформить заказ", new_order_path, class: 'btn btn-success'%>
-    <%= button_to 'Очистить карзину', @cart, method: :delete, data: { confirm: 'Вы уверенны?' }, class: 'btn btn-danger' %>
+    <div style="column-width: 10em;margin-left: 380px;margin-bottom: 1em;">
+      <%= link_to "Оформить заказ", new_order_path, class: 'btn btn-change'%>
+      <%= button_to 'Очистить корзину', @cart, method: :delete, data: { confirm: 'Вы уверенны?' }, class: 'btn btn-delete'%>
+    </div>
   </span>
 </div>
