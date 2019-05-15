@@ -1,10 +1,10 @@
 <div class="block">
   <li class="product-wrapper">
-    <div class="product">
+    <div class="product" style="background-image: url(<%= product.image_url.url %>);">
       <%= link_to product.title, product_path(product.id)%>
       <p> this is product</p>
       <%= button_to 'Добавить в корзину', line_items_path(product_id: product), class: 'btn btn-change', id:'category-add-btn', remote: true %>
     </div>
   </li>
-
+  <%= image_tag product.image_url.url(:medium) %>
 </div>
