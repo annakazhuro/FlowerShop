@@ -2,7 +2,7 @@ class Product < ApplicationRecord
   mount_uploader :image_url, ImageUploader
   has_many :line_items
   before_destroy :ensure_not_referenced_by_any_line_item
-  validates :title, :available, :price, presence: true
+  validates :title, :price, :image_url, presence: true
 
   enum availabilities: {
       'Нет в наличии' => 0,

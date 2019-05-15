@@ -1,6 +1,7 @@
 <div class="container">
   <div class="row justify-content-center align-items-center" style="height:50vh">
     <div class="col-6">
+      <%= image_tag @product.image_url.url %>
       <h1><%= @product.title %></h1>
       <span><%= @product.available %></span>
       <p><%= @product.description %></p>

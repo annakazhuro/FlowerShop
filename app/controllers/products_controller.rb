@@ -25,10 +25,14 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
-    @product = Product.new(product_params)
+    new_params = product_params
+    puts new_params.except(:category_id, :subcategory_id)
+    @product = Product.new(new_params.except(:category_id, :subcategory_id))
 
+    puts @product
     respond_to do |format|
       if @product.save
+        ProductSubcategory.create!(new_params.slice(:category_id, :subcategory_id).merge(product_id: @product.id))
         format.html { redirect_to @product}
         format.js
         format.json { render :show, status: :created, location: @product }
@@ -71,6 +75,6 @@ class ProductsController < ApplicationController
   end
 
   def product_params
-    params.require(:product).permit(:id, :title, :price, :available)
+    params.require(:product).permit(:id, :title, :price, :description, :category_id, :subcategory_id, :available, :image_url)
   end
 end
