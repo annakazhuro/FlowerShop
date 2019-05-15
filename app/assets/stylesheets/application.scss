@@ -33,6 +33,13 @@ $border_color_3: #80776f57;
 /* Links */
 /* Footer */
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.background-body {
+  background-color:white;
+  backdrop-filter: blur(1em);
+  background-size: 100% 100%;
+}
+
 .navbar-custom {
   background-color: #FFF1D2;
 }
@@ -77,9 +84,21 @@ $border_color_3: #80776f57;
   border-color: $border_color_1;
   &:hover {
     text-decoration: none;
-    color: $color_2;
+    color: $color_2 !important;
     background: $color_4;
     border-color: $color_4;
+    border-radius: 5px;
+  }
+}
+.btn-delete {
+  color: #BA8C94;
+  background-color: $background_color_2;
+  border-color: #BA8C94;
+  &:hover {
+    text-decoration: none;
+    color: $color_2;
+    background: #da717f;
+    border-color: #da717f;
     border-radius: 5px;
   }
 }
@@ -87,6 +106,9 @@ $border_color_3: #80776f57;
   &:focus {
     box-shadow: none;
   }
+}
+#category-add-btn {
+  margin-left: 75px;
 }
 .input-change {
   color: $color_1;
@@ -237,10 +259,14 @@ section {
 
 // SIGN IN
 .style {
+  padding-bottom: 10px;
+  padding-top: 10px;
   border-radius: 7px;
   margin-top: 40px;
   margin-bottom: 40px;
   background-image: url("background_form.jpeg");
+  margin-left: auto;
+  margin-right: auto;
   #signin {
     width: 350px;
     height: 400px;
@@ -258,7 +284,14 @@ section {
     height:50vh;
   }
 }
-
+.cart {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 7px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-image: url("background_form_cart.jpg") !important;
+}
 .form {
   a {
     color: #564e4b;
@@ -268,6 +301,10 @@ section {
     }
   }
   h2 {
+    color: #564e4b;
+    font-family: Sans-Serif, Helvetica, sans-serif;
+  }
+  p {
     color: #564e4b;
     font-family: Sans-Serif, Helvetica, sans-serif;
   }
@@ -285,8 +322,53 @@ section {
 }
 
 // PRODUCTS
-.column1 {
+.product-wrapper {
+  display: block;
+  width: 100%;
   float: left;
-  width: 120px;
-  min-height: 50px;
+  transition: width .2s;
+}
+@media only screen and (min-width: 450px) {
+  .product-wrapper {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .product-wrapper {
+    width: 33.333%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .product-wrapper {
+    width: 25%;
+  }
+}
+.product {
+  &:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    border-radius:5%;
+    transition: 0.5s ease;
+  }
+  background-image: url("flower category/cvetok3.jpg");
+  background-size: cover;
+  display: block;
+  border: 1px solid $color_2;
+  border-radius: 5px;
+  position: relative;
+  margin: 0 15px 15px 0;
+  text-decoration: none;
+  color: $color_1;
+  z-index: 0;
+  height: 300px;
+}
+#ul-style {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.item_price {
+
 }

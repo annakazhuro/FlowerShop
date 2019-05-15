@@ -1,8 +1,7 @@
-<div class="container">
-  <h1 style="text-align: center">Корзина</h1>
+<div class="container form cart">
   <% if @cart.line_items.any? %>
     <%= render @cart %>
   <% else %>
-    <h3>Корзина пуста</h3>
+    <h2 align="center" style="margin-top: 10px; margin-bottom: 10px">Корзина пуста</h2>
   <% end %>
 </div>
