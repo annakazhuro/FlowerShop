@@ -20,7 +20,7 @@ class OrderPdf < Prawn::Document
     text "Заказчик: #{@order.name}"
     text "Номер телефона: #{@order.phone}"
     text "Email: #{@order.email}"
-    text "Способ опраты: #{@order.pay_type}"
+    text "Способ оплаты: #{@order.pay_type}"
   end
 
   def line_items
@@ -42,7 +42,7 @@ class OrderPdf < Prawn::Document
 
   def total_price
     move_down 15
-    text "Итоговая цена: #{price(@order.line_items.map(&:quantity).sum)}", size: 16, style: :bold
+    text "Итоговая цена: #{price(@order.line_items.map{ |x| x.quantity * x.product.price}.sum)}", size: 16, style: :bold
   end
 
   private
