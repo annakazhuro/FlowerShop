@@ -1,11 +1,17 @@
 <div class="container">
-  <div class="row justify-content-center align-items-center" style="height:50vh">
-    <div class="col-6">
-      <%= image_tag @product.image_url.url %>
-      <h1><%= @product.title %></h1>
-      <span><%= @product.available %></span>
-      <p><%= @product.description %></p>
-      <p><%= @product.price %></p>
+  <div class="row justify-content-center align-items-center">
+    <div class="row image-style">
+      <%= image_tag @product.image_url.url() %>
+      <div class="col-6" style="margin-top: 30px; margin-left: 20px">
+        <h1><%= @product.title %></h1>
+        <% if @product.available %>
+          <p> Available </p>
+          <% else %>
+          <p> Not available </p>
+        <% end %>
+        <p><%= @product.description %></p>
+        <p>Цена: <%= @product.price %></p>
+      </div>
     </div>
   </div>
 </div>

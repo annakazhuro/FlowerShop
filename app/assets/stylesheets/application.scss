@@ -108,7 +108,11 @@ $border_color_3: #80776f57;
   }
 }
 #category-add-btn {
-  margin-left: 75px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 65px;
 }
 .input-change {
   color: $color_1;
@@ -369,6 +373,12 @@ section {
   margin-top: 3em;
   margin-bottom: 3em;
 }
-.item_price {
-
+.image-style {
+  img {
+    width: 500px;
+    height: 600px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
 }

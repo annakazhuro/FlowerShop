@@ -60,6 +60,7 @@ class ProductsController < ApplicationController
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy
+    ProductSubcategory.find_by_product_id(@product.id).destroy
     @product.destroy
     respond_to do |format|
       format.html { }
